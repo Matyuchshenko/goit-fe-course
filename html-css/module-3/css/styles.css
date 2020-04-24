@@ -1,27 +1,22 @@
 html {
   box-sizing: border-box;
 }
-
 *,
 *::before,
 *::after {
   box-sizing: inherit;
 }
-
 .whole_page {
   width: 1110px;
   margin: 0 auto;
 }
-
 .clearfix::after {
   display: table;
   content: "";
   clear: both;
 }
-
 .main_content {
   margin: 0 auto;
-  /* background-color: aqua; */
   width: 1110px;
   font-size: 0px;
 }
@@ -48,21 +43,16 @@ html {
   width: 490px;
   height: 60px;
   list-style: none;
-  /* vertical-align: middle; */
-  /* text-align: right; */
   padding-top: 43px;
 }
-
 .navigation_item {
   margin-right: 28px;
   display: inline-block;
   font-family: "Open Sans", sans-serif;
 }
-
 .navigation_item:last-child {
   margin-right: 0px;
 }
-
 .navigation_link {
   float: left;
   color: #150101;
@@ -73,12 +63,10 @@ html {
   text-transform: uppercase;
   text-decoration: none;
 }
-
 .navigation_link:hover,
 .navigation_link:focus {
   color: #1abc9c;
 }
-
 .text_title {
   display: inline-block;
   margin: 0px;
@@ -96,7 +84,6 @@ html {
   padding-top: 100px;
   padding-bottom: 130px;
 }
-
 .text_title::after {
   display: block;
   width: 164px;
@@ -118,27 +105,25 @@ html {
 .card:nth-child(n+4) {
   margin-bottom: 0px;
 }
-
 .card:hover .name {
-  background-color: rgb(26, 188, 156);
+  background-color: #1abc9c;
 }
 .card:hover .priсe {
-  background-color: rgb(127, 217, 199);
+  background-color: #7fd9c7;
 }
 .block {
   width: 255px;
   height: 320px;
 }
-
 .photo {
   display: block;
+  min-width: 255px;
   max-width: 100%;
   height: auto;
   margin: 0px;
   padding: 0px;
   background-color: #e9f0fd;
   }
-
 .name {
   float: left;
   margin: 0px;
@@ -159,7 +144,6 @@ html {
 }
 .priсe {
   position: relative;
-  margin-top: 11px;
 }
 .priсe::before {
   content: '';
@@ -173,8 +157,6 @@ html {
 }
 .priсe {
   float: left;
-  margin: 0px;
-  padding: 0px;
   width: 55px;
   height: 40px;
   background-color: #8c8c8c;
@@ -225,7 +207,6 @@ html {
   padding-top: 14px;
   padding-bottom: 30px;
 }
-
 .news_title::after {
   display: block;
   width: 136px;
@@ -261,8 +242,6 @@ html {
     background-color: #4ec6ab;
     padding-left: 42px;
     padding-top: 14px;
-    /* text-align: center;
-    vertical-align: middle; */
     border-radius: 3px
 }
 
