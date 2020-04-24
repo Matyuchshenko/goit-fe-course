@@ -108,7 +108,7 @@ html {
 .card:hover .name {
   background-color: #1abc9c;
 }
-.card:hover .priсe {
+.card:hover .product_cost {
   background-color: #7fd9c7;
 }
 .block {
@@ -142,10 +142,10 @@ html {
   padding-top: 4px;
   text-decoration: none;
 }
-.priсe {
+.product_cost {
   position: relative;
 }
-.priсe::before {
+.product_cost::before {
   content: '';
   display: block;
   background-image: url(./../img/dollar_sign_PNG46.png);
@@ -155,7 +155,7 @@ html {
   position: absolute;
   top: 11px;
 }
-.priсe {
+.product_cost {
   float: left;
   width: 55px;
   height: 40px;
