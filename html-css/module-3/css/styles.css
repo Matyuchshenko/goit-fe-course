@@ -23,7 +23,7 @@ html {
 .logo {
   float: left;
   color: #555252;
-  font-family: "ROBOTO", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 30px;
   line-height: 32px;
   letter-spacing: -1px;
@@ -48,7 +48,7 @@ html {
 .navigation_item {
   margin-right: 28px;
   display: inline-block;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open+Sans", sans-serif;
 }
 .navigation_item:last-child {
   margin-right: 0px;
@@ -102,7 +102,7 @@ html {
 .card:nth-child(4n) {
   margin-right: 0px;
 }
-.card:nth-child(n+4) {
+.card:nth-child(n + 4) {
   margin-bottom: 0px;
 }
 .card:hover .name {
@@ -123,7 +123,7 @@ html {
   margin: 0px;
   padding: 0px;
   background-color: #e9f0fd;
-  }
+}
 .name {
   float: left;
   margin: 0px;
@@ -146,7 +146,7 @@ html {
   position: relative;
 }
 .product_cost::before {
-  content: '';
+  content: "";
   display: block;
   background-image: url(./../img/dollar_sign_PNG46.png);
   width: 18px;
@@ -191,7 +191,7 @@ html {
 .latest_news_card:nth-child(3n) {
   margin-right: 0px;
 }
-.latest_news_card:nth-child(n+3) {
+.latest_news_card:nth-child(n + 3) {
   margin-bottom: 0px;
 }
 .news_title {
@@ -202,7 +202,7 @@ html {
   font-size: 18px;
   line-height: 26px;
   font-weight: 600;
-  font-family: "Open Sans", serif;
+  font-family: "Open+Sans", serif;
   text-align: left;
   padding-top: 14px;
   padding-bottom: 30px;
@@ -223,25 +223,24 @@ html {
   font-size: 14px;
   line-height: 26px;
   font-weight: 400;
-  font-family: "Open Sans", serif;
+  font-family: "Open+Sans", serif;
   text-align: left;
   padding-bottom: 14px;
 }
 .link_bottom {
-    display: inline-block;
-    margin: 0px;
-    padding: 0px;
-    width: 160px;
-    height: 50px;
-    text-decoration: none;
-    color: #ffffff;
-    font-size: 16px;
-    line-height: 26px;
-    font-weight: 300;
-    font-family: "Open Sans", serif;
-    background-color: #4ec6ab;
-    padding-left: 42px;
-    padding-top: 14px;
-    border-radius: 3px
+  display: inline-block;
+  margin: 0px;
+  padding: 0px;
+  width: 160px;
+  height: 50px;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 300;
+  font-family: "Open+Sans", serif;
+  background-color: #4ec6ab;
+  padding-left: 42px;
+  padding-top: 14px;
+  border-radius: 3px;
 }
-
