@@ -130,7 +130,7 @@ html {
   margin-bottom: 0px;
 }
 
-.card:hover .name {
+.card:hover .card_name {
   background-color: #1abc9c;
 }
 
@@ -148,22 +148,24 @@ html {
   background-color: #e9f0fd;
 }
 
-.name {
-  float: left;
+.card_name {
   margin: 0px;
   padding: 0px;
+  float: left;
   width: 200px;
   height: 40px;
+  background-color: #323232;
+}
+
+.name {
   color: #ffffff;
   font-size: 18px;
   font-weight: 900;
-  line-height: 32px;
+  line-height: 40px;
   text-transform: uppercase;
   font-family: "Roboto", serif;
   text-align: left;
-  background-color: #323232;
-  padding-left: 14px;
-  padding-top: 4px;
+  margin-left: 14px;
   text-decoration: none;
 }
 
