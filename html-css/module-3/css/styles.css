@@ -44,7 +44,6 @@ html {
   width: auto;
   list-style: none;
   padding-top: 43px;
-  /* margin-bottom: 104px; */
 }
 
 .navigation_item {
@@ -58,7 +57,7 @@ html {
 
 .navigation_link {
   color: #150101;
-  font-family: "Open+Sans", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 14px;
   line-height: 17px;
   height: 23px;
@@ -86,13 +85,13 @@ html {
   margin: 0px auto;
   padding: 0px;
   width: 1110px;
-  color: #818181;
+  color: #515151;
   font-size: 48px;
   line-height: 58px;
   font-weight: 900;
   text-transform: uppercase;
   letter-spacing: -1px;
-  font-family: "Roboto", serif;
+  font-family: "Roboto", sans-serif;
   text-align: center;
 }
 
@@ -163,7 +162,7 @@ html {
   font-weight: 900;
   line-height: 40px;
   text-transform: uppercase;
-  font-family: "Roboto", serif;
+  font-family: "Roboto", sans-serif;
   text-align: left;
   margin-left: 14px;
   text-decoration: none;
@@ -194,11 +193,10 @@ html {
   color: #ffffff;
   font-size: 18px;
   font-weight: 900;
-  line-height: 32px;
+  line-height: 40px;
   text-transform: uppercase;
-  font-family: "Roboto", serif;
+  font-family: "Roboto", sans-serif;
   text-align: center;
-  padding-top: 4px;
   text-decoration: none;
 }
 
@@ -211,7 +209,7 @@ html {
   display: block;
   max-width: 100%;
   height: auto;
-  margin: 0px;
+  margin: 0px 0px 14px 0px;
   padding: 0px;
 }
 
@@ -237,19 +235,13 @@ html {
   font-size: 18px;
   line-height: 26px;
   font-weight: 600;
-  font-family: "Open+Sans", serif;
+  font-family: "Open Sans", sans-serif;
   text-align: left;
-  padding-top: 14px;
-  padding-bottom: 30px;
+  margin-bottom: 30px;
 }
 
-.news_title::after {
-  display: block;
-  width: 136px;
-  height: 3px;
-  background-color: #1abc9c;
-  content: "";
-  margin-top: 14px;
+.headline_news {
+  color: #555252;
 }
 
 .news_article {
@@ -260,9 +252,9 @@ html {
   font-size: 14px;
   line-height: 26px;
   font-weight: 400;
-  font-family: "Open+Sans", serif;
+  font-family: "Open Sans", sans-serif;
   text-align: left;
-  padding-bottom: 14px;
+  margin-bottom: 14px;
 }
 
 .link_bottom {
@@ -275,10 +267,10 @@ html {
   color: #ffffff;
   font-size: 16px;
   line-height: 26px;
-  font-weight: 300;
-  font-family: "Open+Sans", serif;
+  font-weight: 600;
+  font-family: "Open Sans", sans-serif;
   background-color: #4ec6ab;
-  padding-left: 42px;
-  padding-top: 14px;
+  padding-top: 12px;
+  text-align: center;
   border-radius: 3px;
 }
