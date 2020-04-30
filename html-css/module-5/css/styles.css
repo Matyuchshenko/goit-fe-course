@@ -44,13 +44,14 @@ img {
 
 /* Heder */
 
-.header {
+.section__nav {
   background-color: #ffffff;
+  padding-bottom: 38px;
 }
 
 .block__title {
   background-image: linear-gradient(rgba(0, 0, 2, 0.52), rgba(0, 0, 2, 0.52)),
-    url(./../img/slide4.png);
+    url(/html-css/module-5/img/slide4.png);
   background-repeat: no-repeat;
   background-size: cover;
   color: #ffffff;
@@ -64,7 +65,7 @@ img {
   font-size: 30px;
   line-height: 32px;
   letter-spacing: -1px;
-  font-weight: 200;
+  font-weight: 300;
   text-transform: uppercase;
   text-decoration: none;
   padding-top: 37px;
@@ -96,7 +97,7 @@ img {
   line-height: 17px;
   height: 23px;
   font-weight: 700;
-  font-family: "Open+Sans", sans-serif;
+  font-family: "Open Sans", sans-serif;
   text-transform: uppercase;
 }
 
@@ -159,7 +160,7 @@ img {
   content: "";
   height: 38px;
   width: 22px;
-  background-image: url(./../img/.png);
+  background-image: url(/html-css/module-5/img/.png);
   background-size: 22px 38px;
   background-repeat: no-repeat;
   position: absolute;
@@ -176,7 +177,7 @@ img {
   content: "";
   height: 38px;
   width: 22px;
-  background-image: url(./../img/.png);
+  background-image: url(/html-css/module-5/img/.png);
   background-size: 22px 38px;
   background-repeat: no-repeat;
   position: absolute;
@@ -187,6 +188,7 @@ img {
 
 .main__part {
   background-color: #e9f0fd;
+  padding-bottom: 100px;
 }
 
 .text_title {
@@ -231,7 +233,7 @@ img {
   margin-right: 0px;
 }
 
-.card:nth-child(n+4) {
+.card:nth-child(n + 4) {
   margin-bottom: 0px;
 }
 
@@ -240,7 +242,7 @@ img {
 }
 
 .card:hover .product_cost {
-  background-color: #7FD9C7;
+  background-color: #7fd9c7;
 }
 
 .card:hover .overlay {
@@ -256,8 +258,7 @@ img {
   border-width: 10px;
   border-color: rgb(255, 255, 255);
   border-style: solid;
-  background-color: rgb(0, 0, 0);
-  opacity: 0.549;
+  background-color: rgba(0, 0, 0, 0.55);
   cursor: pointer;
   display: none;
 }
@@ -269,42 +270,65 @@ img {
   border-width: 1px;
   border-color: rgb(255, 255, 255);
   border-style: solid;
-  background-color: rgb(26, 188, 156);
+  background-color: transparent;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .overlay__list-item-button-heart {
-  background-image: url(./../img/heart.png);
+  background-image: url(/html-css/module-5/img/heart.png);
   margin-right: 8px;
+}
+
+.overlay__list-item-button-heart:hover {
+  background-color: #1abc9c;
 }
 
 .overlay__list-item-button-arrows {
-  background-image: url(./../img/arrows.png);
+  background-image: url(/html-css/module-5/img/arrows.png);
   margin-right: 8px;
 }
 
+.overlay__list-item-button-arrows:hover {
+  background-color: #1abc9c;
+}
+
 .overlay__list-item-button-clock {
-  background-image: url(./../img/clock.png);
+  background-image: url(/html-css/module-5/img/clock.png);
+}
+
+.overlay__list-item-button-clock:hover {
+  background-color: #1abc9c;
 }
 
 .overlay__list-item-button-basket {
-  background-image: url(./../img/basket.png);
-  margin-top: 7px;
-  border-right: rgb(26, 188, 156);
-  background-color: #323232;
-}
-
-.overlay__list-item-button-add {
-  width: 114px;
-  margin-top: 7px;
-  text-align: center;
-  border-left: rgb(26, 188, 156);
+  position: relative;
+  color: #ffffff;
+  width: 147px;
   text-transform: uppercase;
+  text-align: right;
+  padding-right: 17px;
   font-size: 14px;
   line-height: 32px;
   font-family: "Open Sans", serif;
+  margin-top: 7px;
   background-color: #323232;
+}
+
+.overlay__list-item-button-basket:hover {
+  background-color: #1abc9c;
+}
+
+.overlay__list-item-button-basket::before {
+  content: "";
+  height: 30px;
+  width: 30px;
+  background-image: url(/html-css/module-5/img/basket.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 50%;
+  left: 15%;
+  transform: translate(-50%, -50%);
 }
 
 .overlay__list {
@@ -353,7 +377,7 @@ img {
 .product_cost::before {
   content: "";
   display: block;
-  background-image: url(./../img/dollar_sign_PNG46.png);
+  background-image: url(/html-css/module-5/img/dollar_sign_PNG46.png);
   width: 15px;
   height: 15px;
   background-size: contain;
@@ -376,4 +400,21 @@ img {
   padding: 4px 11px 4px 24px;
   text-decoration: none;
   box-sizing: border-box;
+}
+
+/* footer */
+
+.footer {
+  font-size: 16px;
+  line-height: 28px;
+  color: #fefefe;
+  font-family: "Open Sans";
+  font-weight: 400;
+  text-align: center;
+  padding: 38px 0px 38px 0px;
+  background-color: rgb(50, 50, 50);
+}
+
+.footer__link {
+  color: #3f9081;
 }
