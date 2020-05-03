@@ -51,7 +51,7 @@ img {
 
 .block__title {
   background-image: linear-gradient(rgba(0, 0, 2, 0.52), rgba(0, 0, 2, 0.52)),
-    url(./../img/slide4.png);
+    url(../img/slide4.png);
   background-repeat: no-repeat;
   background-size: cover;
   color: #ffffff;
@@ -160,7 +160,7 @@ img {
   content: "";
   height: 38px;
   width: 22px;
-  background-image: url(./../img/.png);
+  background-image: url(../img/.png);
   background-size: 22px 38px;
   background-repeat: no-repeat;
   position: absolute;
@@ -177,7 +177,7 @@ img {
   content: "";
   height: 38px;
   width: 22px;
-  background-image: url(./../img/.png);
+  background-image: url(../img/.png);
   background-size: 22px 38px;
   background-repeat: no-repeat;
   position: absolute;
@@ -276,7 +276,7 @@ img {
 }
 
 .overlay__list-item-button-heart {
-  background-image: url(./../img/heart.png);
+  background-image: url(../img/heart.png);
   margin-right: 8px;
 }
 
@@ -285,7 +285,7 @@ img {
 }
 
 .overlay__list-item-button-arrows {
-  background-image: url(./../img/arrows.png);
+  background-image: url(../img/arrows.png);
   margin-right: 8px;
 }
 
@@ -294,7 +294,7 @@ img {
 }
 
 .overlay__list-item-button-clock {
-  background-image: url(./../img/clock.png);
+  background-image: url(../img/clock.png);
 }
 
 .overlay__list-item-button-clock:hover {
@@ -323,7 +323,7 @@ img {
   content: "";
   height: 30px;
   width: 30px;
-  background-image: url(./../img/basket.png);
+  background-image: url(../img/basket.png);
   background-repeat: no-repeat;
   position: absolute;
   top: 50%;
@@ -370,21 +370,21 @@ img {
   list-style: none;
 }
 
-.product_cost {
+/* .product_cost {
   position: relative;
-}
+} */
 
-.product_cost::before {
+/* .product_cost::before {
   content: "";
   display: block;
-  background-image: url(./../img/dollar_sign_PNG46.png);
+  background-image: url(../img/dollar_sign_PNG46.png);
   width: 15px;
   height: 15px;
   background-size: contain;
   position: absolute;
   top: 13px;
   left: 11px;
-}
+} */
 
 .product_cost {
   float: left;
@@ -394,10 +394,10 @@ img {
   color: #ffffff;
   font-size: 18px;
   font-weight: 900;
-  line-height: 32px;
+  line-height: 40px;
   text-transform: uppercase;
   font-family: "Roboto", sans-serif;
-  padding: 4px 11px 4px 24px;
+  text-align: center;
   text-decoration: none;
   box-sizing: border-box;
 }
