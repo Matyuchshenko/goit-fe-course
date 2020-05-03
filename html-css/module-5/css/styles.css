@@ -13,6 +13,7 @@
   padding: 0px;
   list-style: none;
   text-decoration: none;
+  text-transform: uppercase;
 }
 
 ul,
@@ -26,11 +27,6 @@ img {
   height: auto;
 }
 
-.whole_page {
-  width: 1600px;
-  margin: 0 auto;
-}
-
 .clearfix::after {
   display: table;
   content: "";
@@ -42,10 +38,7 @@ img {
   width: 1110px;
 }
 
-/* Heder */
-
 .section__nav {
-  background-color: #ffffff;
   padding-bottom: 38px;
 }
 
@@ -55,7 +48,6 @@ img {
   background-repeat: no-repeat;
   background-size: cover;
   color: #ffffff;
-  text-transform: uppercase;
 }
 
 .logo {
@@ -66,8 +58,6 @@ img {
   line-height: 32px;
   letter-spacing: -1px;
   font-weight: 300;
-  text-transform: uppercase;
-  text-decoration: none;
   padding-top: 37px;
 }
 
@@ -78,7 +68,6 @@ img {
 
 .navigation_list {
   float: right;
-  width: 465px;
   padding-top: 45px;
 }
 
@@ -98,7 +87,6 @@ img {
   height: 23px;
   font-weight: 700;
   font-family: "Open Sans", sans-serif;
-  text-transform: uppercase;
 }
 
 .navigation_link:hover,
@@ -119,7 +107,7 @@ img {
   transform: translate(-50%, -50%);
 }
 
-.heder__title {
+.header__title {
   font-size: 60px;
   letter-spacing: -1px;
   line-height: 82px;
@@ -127,7 +115,7 @@ img {
   font-weight: 900;
 }
 
-.heder__discription {
+.header__discription {
   font-size: 17px;
   letter-spacing: -1px;
   line-height: 54px;
@@ -140,7 +128,7 @@ img {
   display: inline-block;
   width: 104px;
   height: 104px;
-  background: transparent;
+  background-color: rgb(26, 188, 156);
   border: none;
   top: 50%;
   transform: translateY(-50%);
@@ -148,12 +136,11 @@ img {
 
 .slider-control:hover,
 .slider-control:focus {
-  background-color: #1abc9c;
+  background-color: rgba(78, 198, 171, 0.6);
 }
 
 .slider-ctrl-prev {
   left: 0;
-  position: relative;
 }
 
 .slider-ctrl-prev::before {
@@ -161,6 +148,7 @@ img {
   height: 38px;
   width: 22px;
   background-image: url(../img/.png);
+
   background-size: 22px 38px;
   background-repeat: no-repeat;
   position: absolute;
@@ -200,7 +188,6 @@ img {
   font-size: 48px;
   line-height: 58px;
   font-weight: 900;
-  text-transform: uppercase;
   letter-spacing: -1px;
   font-family: "Roboto", serif;
   text-align: center;
@@ -357,34 +344,10 @@ img {
   font-size: 18px;
   font-weight: 900;
   line-height: 40px;
-  text-transform: uppercase;
   font-family: "Roboto", sans-serif;
   text-align: left;
   margin-left: 14px;
-  text-decoration: none;
 }
-
-.list {
-  margin: 0px;
-  padding: 0px;
-  list-style: none;
-}
-
-/* .product_cost {
-  position: relative;
-} */
-
-/* .product_cost::before {
-  content: "";
-  display: block;
-  background-image: url(../img/dollar_sign_PNG46.png);
-  width: 15px;
-  height: 15px;
-  background-size: contain;
-  position: absolute;
-  top: 13px;
-  left: 11px;
-} */
 
 .product_cost {
   float: left;
@@ -395,16 +358,14 @@ img {
   font-size: 18px;
   font-weight: 900;
   line-height: 40px;
-  text-transform: uppercase;
   font-family: "Roboto", sans-serif;
   text-align: center;
   text-decoration: none;
   box-sizing: border-box;
 }
 
-/* footer */
-
 .footer {
+  text-transform: none;
   font-size: 16px;
   line-height: 28px;
   color: #fefefe;
