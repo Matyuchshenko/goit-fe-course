@@ -46,7 +46,7 @@ img {
   background-image: linear-gradient(rgba(0, 0, 2, 0.52), rgba(0, 0, 2, 0.52)),
     url(../img/slide4.png);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-position: top;
   color: #ffffff;
 }
 
