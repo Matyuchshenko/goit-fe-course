@@ -258,11 +258,11 @@ img {
   top: 0px;
   left: 0px;
   height: 472px;
-  width: 100%;
+  width: 381px;
   background: linear-gradient(rgba(243, 129, 129, .9), rgba(252, 227, 138, .9));
   opacity: 0;
   transition: opacity 0.5s linear;
-  transition: box-shadow 0.3 linear;
+  transition: box-shadow 0.3s linear;
 }
 
 .overlay__list {
