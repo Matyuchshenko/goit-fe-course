@@ -56,20 +56,19 @@ img {
 
 .navigation_item::after {
   position: absolute;
-  display: block;
-  width: 50px;
-  height: 3px;
-  background-color: transparent;
   content: "";
+  height: 3px;
+  width: 0;
+  background-color: #f38181;
   top: 30px;
-  left: 0px;
-  width: 100%;
-  transition: background-color 0.2s linear;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: all 0.3s ease-out;
 }
 
 .navigation_item:hover::after,
 .navigation_item:focus::after {
-  background-color: #f38181;
+  width: 100%;
 }
 
 .navigation_list {
