@@ -366,10 +366,6 @@ img {
   display: flex;
   width: 380px;
   height: 40px;
-  border: solid;
-  border-width: 1px;
-  border-color: #95e1d3;
-  border-right: none;
 }
 
 .contact-form__input {
@@ -382,6 +378,10 @@ img {
   font-style: italic;
   width: 60%;
   padding-left: 12px;
+  border: solid;
+  border-width: 1px;
+  border-color: #e7e7e7;
+  border-right: none;
 }
 
 .contact-form__btn {
