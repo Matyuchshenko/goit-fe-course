@@ -32,7 +32,7 @@ img {
   clear: both;
 }
 
-/* Heder */
+/* Header */
 .container {
   width: 1200px;
   margin: 0 auto;
@@ -233,13 +233,13 @@ img {
 /* Overlay */
 .team__card {
   position: relative;
-  /* position: absolute; */
 }
 
 .team__photo {
   position: relative;
-
-  transition: all 0.6s linear 0.4s;
+  top: 0px;
+  left: 0px;
+  transition: all 0.3s linear 0.4s;
 }
 
 .team__card:hover .team__photo {
@@ -261,10 +261,7 @@ img {
   height: 472px;
   width: 100%;
   transition: box-shadow 0.4s linear;
-  background: linear-gradient(
-    rgba(243, 129, 129, 0.9),
-    rgba(252, 227, 138, 0.9)
-  );
+  background: linear-gradient(rgba(243, 129, 129, 0.9), rgba(252, 227, 138, 0.9));
   opacity: 0;
   transition: opacity 0.6s ease-in 0.1s;
 }
