@@ -239,7 +239,7 @@ img {
   position: relative;
   top: 0px;
   left: 0px;
-  transition: all 0.3s linear 0.4s;
+  transition: all 0.3s linear 0.1s;
 }
 
 .team__card:hover .team__photo {
@@ -260,10 +260,9 @@ img {
   left: 0px;
   height: 472px;
   width: 100%;
-  transition: box-shadow 0.4s linear;
   background: linear-gradient(rgba(243, 129, 129, 0.9), rgba(252, 227, 138, 0.9));
   opacity: 0;
-  transition: opacity 0.6s ease-in 0.1s;
+  transition: all 0.3s linear 0.1s;
 }
 
 .overlay__list {
