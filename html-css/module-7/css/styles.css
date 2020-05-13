@@ -80,6 +80,10 @@ img {
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
+html {
+  font-size: 16px;
+}
+
 /* Header */
 .container {
   width: 940px;
@@ -117,8 +121,7 @@ img {
 
 .navigation_link {
   color: #222222;
-  font-size: 14px;
-  /* line-height: 41px; */
+  font-size: 0.875rem;
   line-height: 17px;
   font-weight: 400;
   font-family: "Montserrat", sans-serif;
@@ -132,7 +135,6 @@ img {
 }
 
 /* main */
-
 .main__title {
   margin-bottom: 50px;
   display: flex;
@@ -142,8 +144,7 @@ img {
 }
 
 .main__title-first {
-  font-size: 40px;
-  /* line-height: 75px; */
+  font-size: 2.5rem;
   line-height: 48px;
   text-transform: uppercase;
   color: #222222;
@@ -152,7 +153,7 @@ img {
 }
 
 .main__title-second {
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 19px;
   color: #777777;
   font-family: "Noto Serif", italic sans-serif;
@@ -203,7 +204,7 @@ img {
 }
 
 .card__name {
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 22px;
   color: #222222;
   font-family: "Montserrat", sans-serif;
@@ -213,7 +214,7 @@ img {
 }
 
 .card__description {
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 24px;
   color: #777777;
   font-family: "Roboto Slab", sans-serif;
@@ -229,7 +230,7 @@ img {
 }
 
 .user__form {
-  font-size: 0px;
+  font-size: 0rem;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -249,7 +250,7 @@ img {
   border: 1px solid #cccccc;
   border-radius: 2px;
   padding-left: 16px;
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 17px;
   color: #bbbbbb;
   font-family: "Montserrat", sans-serif;
@@ -266,12 +267,7 @@ img {
 
 .contact-form__input {
   height: 50px;
-  /* margin-bottom: 30px; */
 }
-
-/* .contact-form-input:last-child {
-  margin-bottom: 0px;
-} */
 
 .contact-form__input:required:focus:valid:not(:placeholder-shown) {
   border: 1px solid green;
@@ -294,7 +290,7 @@ img {
   margin: 0 auto;
   text-transform: uppercase;
   font-family: "Montserrat", sans-serif;
-  font-size: 18px;
+  font-size: 1.125rem;
   color: #ffffff;
   font-weight: 700;
   height: 65px;
