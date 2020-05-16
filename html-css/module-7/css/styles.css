@@ -40,7 +40,7 @@ img {
   src: local("Noto Serif Italic"), local("NotoSerif-Italic"),
     url("../fonts/noto-serif-v8-latin-italic.woff2") format("woff2"),
     /* Chrome 26+, Opera 23+, Firefox 39+ */
-    url("../fonts/noto-serif-v8-latin-italic.woff") format("woff");
+      url("../fonts/noto-serif-v8-latin-italic.woff") format("woff");
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
@@ -52,7 +52,7 @@ img {
   src: local("Montserrat Regular"), local("Montserrat-Regular"),
     url("../fonts/montserrat-v14-latin-regular.woff2") format("woff2"),
     /* Chrome 26+, Opera 23+, Firefox 39+ */
-    url("../fonts/montserrat-v14-latin-regular.woff") format("woff");
+      url("../fonts/montserrat-v14-latin-regular.woff") format("woff");
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
@@ -64,7 +64,7 @@ img {
   src: local("Montserrat Bold"), local("Montserrat-Bold"),
     url("../fonts/montserrat-v14-latin-700.woff2") format("woff2"),
     /* Chrome 26+, Opera 23+, Firefox 39+ */
-    url("../fonts/montserrat-v14-latin-700.woff") format("woff");
+      url("../fonts/montserrat-v14-latin-700.woff") format("woff");
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
@@ -76,7 +76,7 @@ img {
   src: local("Roboto Slab"),
     url("../fonts/roboto-slab-v11-latin-regular.woff2") format("woff2"),
     /* Chrome 26+, Opera 23+, Firefox 39+ */
-    url("../fonts/roboto-slab-v11-latin-regular.woff") format("woff");
+      url("../fonts/roboto-slab-v11-latin-regular.woff") format("woff");
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
@@ -88,14 +88,11 @@ html {
 .container {
   width: 940px;
   margin: 0 auto;
-  padding-top: 110px;
-  padding-bottom: 110px;
+  padding: 110px 0px 110px 0px;
 }
 
 .header {
-  padding-top: 50px;
-  width: 940px;
-  margin: 0 auto;
+  padding: 50px 0px 0px 0px;
 }
 
 .section__nav {
@@ -115,7 +112,6 @@ html {
 .navigation_list {
   display: flex;
   flex-wrap: wrap;
-  min-width: 485px;
   align-items: center;
 }
 
@@ -123,7 +119,7 @@ html {
   color: #222222;
   font-size: 0.875rem;
   line-height: 17px;
-  font-weight: 400;
+  font-weight: 700;
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
   transition: color 0.4s linear;
@@ -156,7 +152,7 @@ html {
   font-size: 1rem;
   line-height: 19px;
   color: #777777;
-  font-family: "Noto Serif", italic sans-serif;
+  font-family: "Noto Serif", italic;
   font-weight: 400;
 }
 
@@ -170,7 +166,7 @@ html {
 
 .card {
   min-height: 125px;
-  flex-basis: 290px;
+  flex-basis: 30%;
   padding-top: 114px;
   background-repeat: no-repeat;
   background-position: center top 35px;
@@ -240,11 +236,7 @@ html {
   color: #ffffff;
 }
 
-.titel__form-second {
-  color: #777777;
-}
-
-.contact-form__input,
+.contact-form-input,
 .user__messege-area {
   box-sizing: border-box;
   border: 1px solid #cccccc;
@@ -252,38 +244,43 @@ html {
   padding-left: 16px;
   font-size: 0.875rem;
   line-height: 17px;
-  color: #bbbbbb;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
-  width: 450px;
   margin-bottom: 30px;
 }
 
 .user__messege-area {
   padding-top: 16px;
-  height: 210px;
+  min-height: 210px;
   resize: none;
+  width: 48%;
 }
 
-.contact-form__input {
-  height: 50px;
+.user__input {
+  width: 52%;
 }
 
-.contact-form__input:required:focus:valid:not(:placeholder-shown) {
+.contact-form-input {
+  min-height: 50px;
+  width: 94%;
+}
+
+.contact-form-input:required:focus:valid:not(:placeholder-shown) {
   border: 1px solid green;
 }
 
-.contact-form__input:required:focus:invalid:not(:placeholder-shown) {
+.contact-form-input:required:focus:invalid:not(:placeholder-shown) {
   border: 1px solid red;
 }
 
-.contact-form__input:focus {
+.contact-form-input:focus {
   outline: none;
 }
 
-.contact-form__input::placeholder,
+.contact-form-input::placeholder,
 .user__messege-area::placeholder {
   text-transform: uppercase;
+  color: #bbbbbb;
 }
 
 .contact-form__btn {
@@ -293,8 +290,8 @@ html {
   font-size: 1.125rem;
   color: #ffffff;
   font-weight: 700;
-  height: 65px;
-  width: 240px;
+  min-height: 65px;
+  width: 25%;
   background-color: #fed136;
   border-radius: 2px;
   border: none;
