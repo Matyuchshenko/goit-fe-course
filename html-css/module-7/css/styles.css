@@ -152,7 +152,8 @@ html {
   font-size: 1rem;
   line-height: 19px;
   color: #777777;
-  font-family: "Noto Serif", italic;
+  font-family: "Noto Serif";
+  font-style: italic;
   font-weight: 400;
 }
 
