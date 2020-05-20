@@ -1,0 +1,326 @@
+* html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.clearfix::after {
+  display: table;
+  content: "";
+  clear: both;
+}
+
+/* montserrat-regular - latin */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Montserrat Regular"), local("Montserrat-Regular"),
+    url("../fonts/montserrat-v14-latin-regular.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/montserrat-v14-latin-regular.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* montserrat-700 - latin */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Montserrat Bold"), local("Montserrat-Bold"),
+    url("../fonts/montserrat-v14-latin-700.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/montserrat-v14-latin-700.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* roboto-300 - latin */
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  src: local("Roboto Light"), local("Roboto-Light"),
+    url("../fonts/roboto-v20-latin-300.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url("../fonts/roboto-v20-latin-300.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+html {
+  font-size: 16px;
+}
+
+/* Header */
+
+.container {
+  width: 320px;
+  margin: 0 auto;
+  /* background-color: teal; */
+}
+
+.header__section {
+  padding-top: 20px;
+  text-align: center;
+}
+
+.header__section::before {
+  content: "";
+  width: 100%;
+  min-height: 540px;
+  background-color: #1a1915;
+  background-image: url(../img/frends_mobil.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.user__enter {
+  padding: 10px 16px 8px 16px;
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 0.875rem;
+  background: transparent;
+  border: transparent;
+  border-radius: 50px;
+  border-style: solid;
+  border-width: 2px;
+  transition: color 0.4s linear;
+  outline: none;
+}
+
+.user__enter:hover,
+.user__enter:focus {
+  border-color: #ffffff;
+}
+
+.logo {
+  padding-top: 115px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: 1px;
+  color: #ffffff;
+}
+
+/* MAIN */
+.titel__section {
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 208px;
+}
+.header__title {
+  margin: 0px;
+  padding-top: 25px;
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.2;
+  font-weight: 700;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+.br {
+  display: block;
+}
+
+.header__slogan {
+  margin: 0 auto;
+  width: 70%;
+  font-size: 18px;
+  line-height: 1.2;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  padding-top: 14px;
+  margin-bottom: 18px;
+}
+
+.partner__link {
+  display: inline-block;
+  min-width: 280px;
+  font-size: 14px;
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border-radius: 20px;
+  background-color: rgb(255, 78, 80);
+}
+
+/* MAIN SECTION */
+.main__section {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.main__title {
+  text-align: center;
+  font-size: 22px;
+  color: #333333;
+  font-family: "Montserrat";
+  font-weight: 700;
+}
+
+.card__partner {
+  margin: 0 auto;
+  /* width: 70%; */
+  width: 224px;
+  min-height: 230px;
+  padding-top: 25px;
+}
+.photo__section {
+  margin: 0 auto;
+  width: 121px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.photo__section::before {
+  content: "";
+  height: 32px;
+  width: 32px;
+  background-color: #ff4e50;
+  background-image: url(../img/TV.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  border-style: solid;
+  border-width: 4px;
+  border-radius: 50%;
+  border-color: #ffffff;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.chemistry::before {
+  background-image: url(../img/chemistry.png);
+  background-color: #ffa507;
+}
+
+.coffe::before {
+  background-image: url(../img/coffe.png);
+  background-color: #1cd7ad;
+}
+
+.telegram::before {
+  background-image: url(../img/telegram.png);
+  background-color: #4e73db;
+}
+
+.name__partner {
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  color: rgb(51, 51, 51);
+  font-weight: 700; 
+  padding-bottom: 20px;
+}
+.about__partner {
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: rgb(102, 102, 102);
+}
+.link {
+   text-align: center;
+   margin-bottom: 58px;
+}
+.other-partners {
+  color: rgb(255, 78, 80);
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgb(255, 78, 80);
+  background-color: rgb(255, 255, 255);
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 670px;
+  }
+  .header__section::before {
+    min-height: 700px;
+    background-image: url(../img/frends_tablet.png);
+  }
+
+  .header__section {
+    display: flex;
+    align-items: baseline;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding-top: 38px;
+    text-align: center;
+  }
+
+  .logo {
+    padding-top: 0px;
+  }
+
+  .titel__section {
+    margin-bottom: 300px;
+  }
+  .header__title {
+    padding-top: 152px;
+    font-size: 52px;
+  }
+  
+  .header__slogan {
+    font-size: 24px;
+    padding-top: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .partner__link {
+    min-width: 34%;
+  }
+
+  .main__section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 36px;
+  }
+  .card__partner {
+    margin: 0 auto;
+    min-height: 238px;
+    padding-top: 25px;
+  }
+  .link {
+    margin-bottom: 40px;
+  }
+  @media (min-width: 940px) {
+    .container {
+      width: 940px;
+    }
+    .header__section::before {
+     background-image: url(../img/frends_desktop.png);
+    }
+   
+    .link {
+      margin-bottom: 75px;
+    }
