@@ -112,6 +112,7 @@ html {
   border-width: 2px;
   transition: color 0.4s linear;
   outline: none;
+  cursor: pointer;
 }
 
 .user__enter:hover,
@@ -193,13 +194,13 @@ html {
   /* width: 70%; */
   width: 224px;
   min-height: 230px;
-  padding-top: 25px;
+  margin-bottom: 25px;
 }
 .photo__section {
   margin: 0 auto;
   width: 121px;
-  padding-bottom: 20px;
   position: relative;
+  margin-bottom: 20px;
 }
 
 .photo__section::before {
@@ -238,7 +239,8 @@ html {
   font-size: 14px;
   font-family: "Montserrat", sans-serif;
   color: rgb(51, 51, 51);
-  font-weight: 700; 
+  font-weight: 700;
+  /* padding-top: 20px; */
   padding-bottom: 20px;
 }
 .about__partner {
@@ -261,7 +263,7 @@ html {
 
 @media (min-width: 768px) {
   .container {
-    width: 670px;
+    width: 672px;
   }
   .header__section::before {
     min-height: 700px;
@@ -291,35 +293,47 @@ html {
   
   .header__slogan {
     font-size: 24px;
-    padding-top: 20px;
-    margin-bottom: 30px;
+    padding-top: 40px;
+    margin-bottom: 37px;
   }
   
   .partner__link {
-    min-width: 34%;
+    min-width: 225px;
   }
 
   .main__section {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    width: 492px;
     margin-bottom: 36px;
   }
+
+  .hunter {order: 1;}
+  .walker {order: 2;}
+  .marsha {order: 3;}
+  .bradley {order: 4;}
+
   .card__partner {
     margin: 0 auto;
     min-height: 238px;
     padding-top: 25px;
   }
+  
+
   .link {
     margin-bottom: 40px;
   }
   @media (min-width: 940px) {
     .container {
-      width: 940px;
+      width: 942px;
     }
     .header__section::before {
      background-image: url(../img/frends_desktop.png);
     }
+
+    .main__section {
+      width: 100%;
    
     .link {
       margin-bottom: 75px;
