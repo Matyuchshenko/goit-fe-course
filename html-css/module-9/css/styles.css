@@ -1,0 +1,349 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* montserrat-regular - latin */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Montserrat Regular"), local("Montserrat-Regular"),
+    url("../fonts/montserrat-v14-latin-regular.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/montserrat-v14-latin-regular.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* montserrat-700 - latin */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Montserrat Bold"), local("Montserrat-Bold"),
+    url("../fonts/montserrat-v14-latin-700.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/montserrat-v14-latin-700.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* roboto-300 - latin */
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  src: local("Roboto Light"), local("Roboto-Light"),
+    url("../fonts/roboto-v20-latin-300.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url("../fonts/roboto-v20-latin-300.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+html {
+  font-size: 16px;
+}
+
+/* Header */
+.header {
+  padding-top: 18px;
+  margin-bottom: 25px;
+}
+
+.authorization-list {
+  display: flex;
+  justify-content: center;
+}
+
+.header::before {
+  content: "";
+  width: 100%;
+  min-height: 540px;
+  background-color: #1a1915;
+  background-image: url(../img/frends_mobil.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+@media (max-width: 767px) {
+  .logo {
+    display: block;
+    width: max-content;
+    margin: 0 auto;
+  }
+  .authorization-column {
+      margin-bottom: 115px;
+      }
+}
+@media (min-width: 768px) {
+  .authorization-list {
+    justify-content: flex-end;
+  }
+}
+
+
+.user__enter {
+  padding: 10px 16px 8px 16px;
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 0.875rem;
+  background: transparent;
+  border: transparent;
+  border-radius: 50px;
+  border-style: solid;
+  border-width: 2px;
+  transition: color 0.4s linear;
+  outline: none;
+  cursor: pointer;
+}
+
+.user__enter:hover,
+.user__enter:focus {
+  border-color: #ffffff;
+}
+
+.logo {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: 1px;
+  color: #ffffff;
+}
+
+/* MAIN */
+
+.main__top-row {
+  text-align: center;
+  margin-bottom: 215px;
+}
+
+.main__title-top {
+  margin: 0px;
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.2;
+  font-weight: 700;
+  font-size: 30px;
+  text-transform: uppercase;
+  margin-bottom: 13px;
+}
+
+.br {
+  display: block;
+}
+
+.main__slogan {
+  font-size: 18px;
+  line-height: 1.2;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  padding: 0px 30px 0px 30px;
+  margin-bottom: 27px;
+}
+
+.partner__link {
+  font-size: 14px;
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  padding: 13px 50px;
+  border-radius: 20px;
+  background-color: rgb(255, 78, 80);
+}
+
+
+.main__section {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.main__title {
+  text-align: center;
+  font-size: 22px;
+  color: #333333;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.photo__section {
+  margin: 0 auto;
+  width: 121px;
+  position: relative;
+  margin-bottom: 18px;
+}
+
+.photo__section::before {
+  content: "";
+  height: 32px;
+  width: 32px;
+  background-color: #ff4e50;
+  background-image: url(../img/TV.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  border-style: solid;
+  border-width: 4px;
+  border-radius: 50%;
+  border-color: #ffffff;
+  position: absolute;
+  bottom: 0;
+  right: 4px;
+}
+
+.chemistry::before {
+  background-image: url(../img/chemistry.png);
+  background-color: #ffa507;
+}
+
+.coffe::before {
+  background-image: url(../img/coffe.png);
+  background-color: #1cd7ad;
+}
+
+.telegram::before {
+  background-image: url(../img/telegram.png);
+  background-color: #4e73db;
+}
+
+.name__partner {
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  color: rgb(51, 51, 51);
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+.about__partner {
+  width: 70%;
+  margin: 0 auto;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: rgb(102, 102, 102);
+}
+.link {
+   text-align: center;
+   margin-bottom: 58px;
+}
+.other-partners {
+  color: rgb(255, 78, 80);
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgb(255, 78, 80);
+  background-color: rgb(255, 255, 255);
+}
+
+@media (max-width: 767px) {
+  .card__partner:not(:last-child) {
+    margin-bottom: 25px;
+  }
+}
+@media (min-width: 768px) and (max-width: 940px) {
+  .card__partner:nth-last-child(2n) {
+    margin-bottom: 43px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 672px;
+  }
+  .header::before {
+    min-height: 700px;
+    background-image: url(../img/frends_tablet.png);
+  }
+
+  .header {
+    padding-top: 40px;
+    margin-bottom: 139px;
+    text-align: center;
+  }
+
+   .main__top-row {
+    margin-bottom: 314px;
+  }
+  .main__title-top {
+    font-size: 52px;
+    margin-bottom: 25px;
+  }
+  
+  .main__slogan {
+    font-size: 24px;
+    margin-bottom: 43px;
+  }
+  .partner__link {
+    padding: 13px 22px;
+    border-radius: 20px;
+  }
+  
+  .main__section {
+    display: flex;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .main__title {
+    margin-bottom: 32px;
+  }
+
+  .main__row {
+    margin-bottom: 25px;
+  }
+
+  .hunter {order: 1;}
+  .walker {order: 2;}
+  .marsha {order: 3;}
+  .bradley {order: 4;}
+
+  .card__partner {
+    margin: 0 auto;
+  }
+
+  .other-partners {
+    padding: 10px 5px;
+    border-radius: 20px;
+  }
+
+  .link {
+    margin-bottom: 40px;
+  }
+
+  @media (min-width: 940px) {
+    .container {
+      width: 940px;
+    }
+
+    .header::before {
+     background-image: url(../img/frends_desktop.png);
+    }
+
+     .link {
+      margin-bottom: 75px;
+    }
+    .main__row {
+      margin-bottom: 27px;
+    }
+    .authorization-list {
+      justify-content: center;
+    }
+
+    .about__partner {
+      width: 80%;
+    }
+    
