@@ -141,6 +141,7 @@ html {
   line-height: 1.2;
   font-weight: 700;
   font-size: 30px;
+  letter-spacing: -0.2px;
   text-transform: uppercase;
   margin-bottom: 13px;
 }
@@ -191,6 +192,7 @@ html {
   margin-bottom: 18px;
 }
 
+
 .photo__section::before {
   content: "";
   height: 32px;
@@ -205,7 +207,10 @@ html {
   border-color: #ffffff;
   position: absolute;
   bottom: 0;
-  right: 4px;
+  right: 0;
+  box-sizing: content-box;
+  transform: translate(4px, 4px);
+
 }
 
 .chemistry::before {
@@ -240,9 +245,11 @@ html {
 }
 .link {
    text-align: center;
-   margin-bottom: 58px;
+     /* padding: 10px 5px; */
+   margin-bottom: 58px; 
 }
-.other-partners {
+  
+  .other-partners {
   color: rgb(255, 78, 80);
   border-style: solid;
   border-width: 2px;
@@ -253,7 +260,7 @@ html {
 @media (max-width: 767px) {
   .card__partner:not(:last-child) {
     margin-bottom: 25px;
-  }
+    }
 }
 @media (min-width: 768px) and (max-width: 940px) {
   .card__partner:nth-last-child(2n) {
@@ -275,8 +282,8 @@ html {
     margin-bottom: 139px;
     text-align: center;
   }
-
-   .main__top-row {
+  
+  .main__top-row {
     margin-bottom: 314px;
   }
   .main__title-top {
@@ -301,25 +308,20 @@ html {
   .main__title {
     margin-bottom: 32px;
   }
-
+  
   .main__row {
     margin-bottom: 25px;
   }
-
+  
   .hunter {order: 1;}
   .walker {order: 2;}
   .marsha {order: 3;}
   .bradley {order: 4;}
-
+  
   .card__partner {
     margin: 0 auto;
   }
-
-  .other-partners {
-    padding: 10px 5px;
-    border-radius: 20px;
-  }
-
+  
   .link {
     margin-bottom: 40px;
   }
@@ -337,7 +339,7 @@ html {
       margin-bottom: 75px;
     }
     .main__row {
-      margin-bottom: 27px;
+      margin-bottom: 16px;
     }
     .authorization-list {
       justify-content: center;
