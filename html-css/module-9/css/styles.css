@@ -170,12 +170,6 @@ html {
   background-color: rgb(255, 78, 80);
 }
 
-
-.main__section {
-  text-align: center;
-  margin-bottom: 30px;
-}
-
 .main__title {
   text-align: center;
   font-size: 22px;
@@ -185,13 +179,20 @@ html {
   margin-bottom: 16px;
 }
 
+
+
+
+.main__section {
+  text-align: center;
+  margin-bottom: 33px;
+}
+
 .photo__section {
   margin: 0 auto;
   width: 121px;
   position: relative;
   margin-bottom: 18px;
 }
-
 
 .photo__section::before {
   content: "";
@@ -243,13 +244,18 @@ html {
   font-weight: 300;
   color: rgb(102, 102, 102);
 }
+
+
+
 .link {
    text-align: center;
-     /* padding: 10px 5px; */
+   
    margin-bottom: 58px; 
 }
   
   .other-partners {
+  padding: 8px 1px;
+  line-height: 19px;
   color: rgb(255, 78, 80);
   border-style: solid;
   border-width: 2px;
@@ -305,6 +311,7 @@ html {
     text-align: center;
     margin-bottom: 10px;
   }
+  
   .main__title {
     margin-bottom: 32px;
   }
@@ -319,11 +326,16 @@ html {
   .bradley {order: 4;}
   
   .card__partner {
+    flex-wrap: wrap;
     margin: 0 auto;
   }
   
   .link {
     margin-bottom: 40px;
+  }
+
+  .other-partners {
+    padding: 8px 1px;
   }
 
   @media (min-width: 940px) {
