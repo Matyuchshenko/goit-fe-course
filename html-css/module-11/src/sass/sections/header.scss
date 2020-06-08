@@ -1,0 +1,122 @@
+.header {
+    background-image: linear-gradient(rgba(243,129,129,1.0), rgba(252,227,138,0.8)), url(../images/eagle.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 1000px;
+    margin-bottom: 46px;
+  }
+  
+  @media (min-resolution: 192dpi) {
+    .header {
+      background-image: linear-gradient(rgba(252,227,138,0), rgba(243,129,129,1)), url(../images/eagle@2x.jpg);
+    }
+  }
+  /* HEADER */
+  .navigation {
+    display: flex;
+    align-items: center;
+    padding-top: 29px;
+    margin-bottom: 160px;
+  }
+  .navigation__list {
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-end;
+    min-width: 491px;
+    align-items: baseline;
+  }
+  
+  .logo {
+    color: #fff;
+    font-size: 30px;
+    line-height: 32px;
+    font-weight: 700;
+  }
+  
+  .navigation__item {
+    position: relative;
+    margin-right: 50px;
+  }
+  
+  
+  .navigation__item::after {
+    position: absolute;
+    content: "";
+    height: 3px;
+    width: 0;
+    background-color: #fce38a;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all 0.3s ease-out;
+  }
+  
+  .navigation__item:hover::after,
+  .navigation__item:focus::after {
+    width: 100%;
+  }
+  
+  .navigation__link {
+    color: #fff;
+    font-size: 14px;
+    line-height: 17px;
+    height: 23px;
+    text-transform: uppercase;
+    transition: color 0.4s linear;
+  }
+  
+  .navigation__link:hover,
+  .navigation__link:focus {
+    color: #fce38a;
+  }
+
+  .navigation__action-link-svg, .navigation__action-button-svg {
+    fill: #fff;
+    transition: fill 0.4s linear;
+  }
+  
+  .navigation__action-link-svg:hover,
+  .navigation__action-link-svg:focus {
+    fill: #fce38a;
+  }
+  
+  .navigation__action-button-svg:hover,
+  .navigation__action-button-svg:focus {
+    fill: #fce38a;
+  }
+  
+  .navigation__action {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .navigation__action-link-svg, .navigation__action-button-svg {
+    height: 18px;
+    width: 18px;
+  }  
+  
+  .navigation__action-item {
+    margin-right: 50px;
+    cursor: pointer;
+    transition: color 0.4s linear;
+  }
+  
+  .navigation__action-item:last-child {
+    margin-right: 0px;
+  }
+
+  .button {
+    display: block;
+    margin: 0 auto;
+    border: solid;
+    border-width: 3px;
+    border-color: #fff;
+    background-color: transparent;
+    color: #fff;
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 12px 30px;
+    cursor: pointer;
+  }

@@ -1,0 +1,60 @@
+  .about__team {
+    display: block;
+    font-size: 15px;
+    line-height: 24px;
+    color: #999999;
+    font-family: "Roboto", sans-serif;
+    width: 980px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 85px;
+  }
+  
+  .team {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 85px;
+  }
+  
+  .team__crew {
+    font-size: 14px;
+    line-height: 17px;
+    color: #333333;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .team__title {
+    font-size: 15px;
+    line-height: 24px;
+    color: #999999;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    text-align: center;
+  }
+
+  .team__card {
+    position: relative;
+  }
+  
+  .team__photo {
+    padding-bottom: 30px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    transition: all 0.3s linear 0.1s;
+  }
+  
+  .team__card:hover .team__photo {
+    top: -10px;
+    left: -10px;
+  }
+  
+  .team__card:hover .overlay {
+    opacity: 1;
+    top: -10px;
+    left: -10px;
+    box-shadow: 10px 10px 0px 3px #95e1d3;
+  }
