@@ -14,39 +14,39 @@
     display: flex;
     justify-content: space-between;
     padding-bottom: 85px;
-  }
-  
-  .team__crew {
-    font-size: 14px;
-    line-height: 17px;
-    color: #333333;
-    font-weight: 700;
-    margin-bottom: 10px;
-    text-align: center;
-  }
-  
-  .team__title {
-    font-size: 15px;
-    line-height: 24px;
-    color: #999999;
-    font-family: "Roboto", sans-serif;
-    font-weight: 300;
-    font-style: italic;
-    text-align: center;
-  }
 
-  .team__card {
-    position: relative;
+    &__crew {
+      font-size: 14px;
+      line-height: 17px;
+      color: #333333;
+      font-weight: 700;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+
+    &__title {
+      font-size: 15px;
+      line-height: 24px;
+      color: #999999;
+      font-family: "Roboto", sans-serif;
+      font-weight: 300;
+      font-style: italic;
+      text-align: center;
+    }
+
+    &__card {
+      position: relative;
+    }
+
+    &__photo {
+      padding-bottom: 30px;
+      position: relative;
+      top: 0px;
+      left: 0px;
+      transition: all 0.3s linear 0.1s;
+    }
   }
-  
-  .team__photo {
-    padding-bottom: 30px;
-    position: relative;
-    top: 0px;
-    left: 0px;
-    transition: all 0.3s linear 0.1s;
-  }
-  
+   
   .team__card:hover .team__photo {
     top: -10px;
     left: -10px;

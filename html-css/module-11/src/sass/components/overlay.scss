@@ -1,48 +1,48 @@
 .overlay {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    height: 472px;
-    width: 100%;
-    background: linear-gradient(
-      rgba(243, 129, 129, 0.9),
-      rgba(252, 227, 138, 0.9)
-    );
-    opacity: 0;
-    transition: all 0.3s linear 0.1s;
-  }
-  
-  .overlay__list {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 472px;
+  width: 100%;
+  background: linear-gradient(
+    rgba(243, 129, 129, 0.9),
+    rgba(252, 227, 138, 0.9)
+  );
+  opacity: 0;
+  transition: all 0.3s linear 0.1s;
+
+  &__list {
     display: flex;
     width: 224px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+
+    &-item-button {
+      display: flex;
+      width: 56px;
+      height: 56px;
+      border-width: 1px;
+      border-color: #f9bd87;
+      border-style: solid;
+      background-color: #fce38a;
+      justify-content: center;
+      align-items: center;
+
+      &:hover {
+        background-color: #f38181;
+      }
+    }
   }
-  
-  .overlay__list-item-button {
-    display: flex;
-    width: 56px;
-    height: 56px;
-    border-width: 1px;
-    border-color: #f9bd87;
-    border-style: solid;
-    background-color: #fce38a;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .overlay__list-item-button:hover {
-    background-color: #f38181;
-  }
-  
-  .overlay__list-item-button-svg {
-    width: 26px;
-    height: 26px;
-    fill: #f38181;
-  }
-  
-  .overlay__list-item-button:hover .overlay__list-item-button-svg {
-    fill: #fff;
-  }
+}
+
+.overlay__list-item-button-svg {
+  width: 26px;
+  height: 26px;
+  fill: #f38181;
+}
+
+.overlay__list-item-button:hover .overlay__list-item-button-svg {
+  fill: #fff;
+}
