@@ -1,106 +1,118 @@
 .header {
-    background-image: linear-gradient(rgba(243,129,129,1.0), rgba(252,227,138,0.8)), url(../images/eagle.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 1000px;
-    margin-bottom: 46px;
-  }
-  
+  background-image: linear-gradient(
+      rgba(243, 129, 129, 1),
+      rgba(252, 227, 138, 0.8)
+    ),
+    url(../images/eagle.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 1000px;
+  margin-bottom: 46px;
+
   @media (min-resolution: 192dpi) {
-    .header {
-      background-image: linear-gradient(rgba(252,227,138,0), rgba(243,129,129,1)), url(../images/eagle@2x.jpg);
+    background-image: linear-gradient(
+        rgba(252, 227, 138, 0),
+        rgba(243, 129, 129, 1)
+      ),
+      url(../images/eagle@2x.jpg);
+  }
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  padding-top: 29px;
+  margin-bottom: 160px;
+
+  &__list {
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-end;
+    min-width: 491px;
+    align-items: baseline;
+  }
+
+  &__item {
+    position: relative;
+    margin-right: 50px;
+
+    &:hover::after,
+    &:focus::after {
+      width: 100%;
+    }
+
+    &::after {
+      position: absolute;
+      content: '';
+      height: 3px;
+      width: 0;
+      background-color: #fce38a;
+      top: 30px;
+      left: 50%;
+      transform: translateX(-50%);
+      transition: all 0.3s ease-out;
     }
   }
 
-  .navigation {
+  &__link {
+    color: #fff;
+    font-size: 14px;
+    line-height: 17px;
+    height: 23px;
+    text-transform: uppercase;
+    transition: color 0.4s linear;
+
+    &:hover, &:focus {
+      color: #fce38a;
+    }
+  }
+
+  &__action {
     display: flex;
+    justify-content: center;
     align-items: center;
-    padding-top: 29px;
-    margin-bottom: 160px;
 
-    &__list {
-      display: flex;
-      flex-grow: 1;
-      justify-content: flex-end;
-      min-width: 491px;
-      align-items: baseline;
+    &-link-svg,
+    &-button-svg {
+      height: 18px;
+      width: 18px;
+      fill: #fff;
+      transition: fill 0.4s linear;
     }
 
-    &__item {
-      position: relative;
+    &-link-svg:hover,
+    &-link-svg:focus {
+      fill: #fce38a;
+    }
+
+    &-button-svg:hover,
+    &-button-svg:focus {
+      fill: #fce38a;
+    }
+
+    &-item {
       margin-right: 50px;
-      
-      &:hover::after,
-      &:focus::after {
-        width: 100%;
-      }
-
-      &::after {
-        position: absolute;
-        content: "";
-        height: 3px;
-        width: 0;
-        background-color: #fce38a;
-        top: 30px;
-        left: 50%;
-        transform: translateX(-50%);
-        transition: all 0.3s ease-out;
-      }
-    }
-
-
-    &__link {
-      color: #fff;
-      font-size: 14px;
-      line-height: 17px;
-      height: 23px;
-      text-transform: uppercase;
+      cursor: pointer;
       transition: color 0.4s linear;
 
-      &:hover,
-      &:focus {
-        color: #fce38a;
+      &:last-child {
+        margin-right: 0px;
       }
     }
 
-    &__action {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
-      &-link-svg:hover,
-      &-link-svg:focus {
-        fill: #fce38a;
-      }
-
-      &-button-svg:hover,
-      &-button-svg:focus {
-        fill: #fce38a;
-      }
-
-      &-item {
-        margin-right: 50px;
-        cursor: pointer;
-        transition: color 0.4s linear;
-
-        &:last-child {
-          margin-right: 0px;
-        }
-      }
-      
+    &-link-svg,
+    &-button-svg {
+      height: 18px;
+      width: 18px;
+      fill: #fff;
+      transition: fill 0.4s linear;
     }
   }
-  
-  .logo {
-    color: #fff;
-    font-size: 30px;
-    line-height: 32px;
-    font-weight: 700;
-  }
+}
 
-  .navigation__action-link-svg, .navigation__action-button-svg {
-    height: 18px;
-    width: 18px;
-    fill: #fff;
-    transition: fill 0.4s linear;
-  }  
+.logo {
+  color: #fff;
+  font-size: 30px;
+  line-height: 32px;
+  font-weight: 700;
+}

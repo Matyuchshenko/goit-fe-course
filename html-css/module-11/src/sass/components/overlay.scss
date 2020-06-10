@@ -30,19 +30,18 @@
       justify-content: center;
       align-items: center;
 
+      &:hover &-svg {
+        fill: #fff;
+      }
+
       &:hover {
         background-color: #f38181;
       }
+      &-svg {
+        width: 26px;
+        height: 26px;
+        fill: #f38181;
+      }
     }
   }
-}
-
-.overlay__list-item-button-svg {
-  width: 26px;
-  height: 26px;
-  fill: #f38181;
-}
-
-.overlay__list-item-button:hover .overlay__list-item-button-svg {
-  fill: #fff;
 }
