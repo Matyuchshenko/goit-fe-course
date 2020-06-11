@@ -222,8 +222,6 @@ img {
 }
 
 .navigation__action-item {
-  height: 18px;
-  width: 18px;
   margin-right: 50px;
   cursor: pointer;
   transition: color 0.4s linear;
@@ -232,8 +230,12 @@ img {
 .navigation__action-item:last-child {
   margin-right: 0px;
 }
+
 .navigation__action-link-svg,
 .navigation__action-button-svg {
+  padding: 0px 10px;
+  height: 18px;
+  width: 18px;
   fill: #fff;
   transition: fill 0.4s linear;
 }
@@ -628,7 +630,6 @@ img {
   text-align: center;
   font-size: 14px;
   color: #333333;
-  /* font-weight: 400; */
 }
 
 .footer__link {
@@ -644,23 +645,34 @@ img {
 }
 
 .contact-form__input {
+  box-sizing: border-box;
   font-size: 15px;
-  border: none;
   line-height: 36px;
   color: #333333;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-style: italic;
   width: 60%;
-  padding-left: 12px;
-  border: solid;
-  border-width: 1px;
-  border-color: #e7e7e7;
+  margin-right: 0.5px;
+  padding-left: 16px;
+  border: 1px solid #e7e7e7;
   border-right: none;
 }
 
 .contact-form__input::placeholder {
   color: #d9d9d9;
+}
+
+.contact-form__input:required:focus:valid:not(:placeholder-shown) {
+  border: 1px solid green;
+}
+
+.contact-form__input:required:focus:invalid:not(:placeholder-shown) {
+  border: 1px solid red;
+}
+
+.contact-form__input:focus {
+  outline: none;
 }
 
 .contact-form__btn {
