@@ -59,6 +59,9 @@
       &:focus {
         outline: none;
       }
+      &::placeholder {
+        color: #d9d9d9;
+      }
     }
 
     &__btn {
@@ -75,8 +78,5 @@
     }
   }  
   
-  .contact-form__input::placeholder {
-    color: #d9d9d9;
-  }
   
   
