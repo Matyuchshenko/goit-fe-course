@@ -1,34 +1,32 @@
-const cina = "100";
-const chile = "250";
-
-const australia = "170";
-const india = "80";
-const jamaica = "120";
+let price = 0;
 
 let country = prompt("Введите страну получатель.");
 let countryLower = country.toLocaleLowerCase();
 
 switch (countryLower) {
   case "китай":
-    console.log(`Доставка в ${countryLower} будет стоить ${cina} кредитов`);
+    price = 100;
     break;
 
   case "чили":
-    console.log(`Доставка в ${countryLower} будет стоить ${chile} кредитов`);
+    price = 250;
     break;
 
   case "австралия":
-    console.log(`Доставка в ${countryLower} будет стоить ${australia} кредитов`);
+    price = 170;
     break;
 
   case "индия":
-    console.log(`Доставка в ${countryLower} будет стоить ${india} кредитов`);
+    price = 80;
     break;
 
   case "ямайка":
-    console.log(`Доставка в ${countryLower} будет стоить ${jamaica} кредитов`);
+    price = 120;
+  
     break;
 
   default:
     alert("В вашей стране доставка не доступна.");
 }
+
+console.log(`Доставка в ${countryLower} будет стоить ${price} кредитов`);
