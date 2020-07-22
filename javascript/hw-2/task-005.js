@@ -2,7 +2,7 @@
 
 const checkForSpam = function(message) {
     const messageLower = message.toLowerCase();
-    let search = ((messageLower.includes('spam')) || (messageLower.includes('sale')));
+    let search = (messageLower.includes('spam')) || (messageLower.includes('sale'));
     return search;
     };
  
