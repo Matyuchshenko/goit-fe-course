@@ -1,7 +1,5 @@
 let input;
-
 let total = 0;
-
 const numbers = [];
 
 while (true) {

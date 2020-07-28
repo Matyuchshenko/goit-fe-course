@@ -5,11 +5,9 @@ const products = [
   { name: "Захват", price: 1200, quantity: 2 },
 ];
 
-console.table(products);
-
 const calculateTotalPrice = function (allProdcuts, productName) {
   let totalPrice = 0;
-  let searchedProductName;
+  // let searchedProductName;
 
   for (let product of allProdcuts) {
     const { name } = product;
@@ -17,11 +15,12 @@ const calculateTotalPrice = function (allProdcuts, productName) {
     if (productName.toLowerCase() === name.toLowerCase()) {
       searchedProductName = product;
       totalPrice = product.price * product.quantity;
-    }
-  }
+    };
+  };
   return totalPrice;
 };
 
-console.log(calculateTotalPrice(products, "Радар")); // 5200
 
-console.log(calculateTotalPrice(products, "Дроид")); // 2800
+console.log(calculateTotalPrice(products, "Радар"));
+
+console.log(calculateTotalPrice(products, "Дроид"));
