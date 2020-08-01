@@ -7,7 +7,7 @@ const products = [
 
 const calculateTotalPrice = function (allProdcuts, productName) {
   let totalPrice = 0;
-  // let searchedProductName;
+  let searchedProductName;
 
   for (let product of allProdcuts) {
     const { name } = product;

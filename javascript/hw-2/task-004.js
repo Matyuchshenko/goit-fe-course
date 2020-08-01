@@ -1,6 +1,5 @@
 const formatString = function (string) {
-  let stringCut;
-
+  
   if (string.length <= 40) {
     return string;
   } else {
