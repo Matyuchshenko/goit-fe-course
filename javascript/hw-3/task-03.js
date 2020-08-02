@@ -1,3 +1,4 @@
+"use strict";
 const findBestEmployee = function (employees) {
   let max = 0;
   let maxName = null;

@@ -1,3 +1,4 @@
+"use strict";
 const inventory = {
   items: ['Knife', 'Gas mask'],
   add(itemName) {

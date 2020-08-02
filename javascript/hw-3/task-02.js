@@ -1,3 +1,4 @@
+"use strict";
 const countProps = function(obj) {
     const values = Object.values(obj);
     

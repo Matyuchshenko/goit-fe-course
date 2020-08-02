@@ -1,3 +1,4 @@
+"use strict";
 let price = 0;
 
 let country = prompt("Введите страну получатель.");

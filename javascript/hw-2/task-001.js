@@ -1,3 +1,4 @@
+"use strict";
 const logItems = function (string) {
   for (let i = 0; i < string.length; i += 1) {
     let numberString = `${1 + i} - ${string[i]}`;
