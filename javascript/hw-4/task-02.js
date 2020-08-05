@@ -1,6 +1,7 @@
 "use strict";
 const inventory = {
   items: ['Knife', 'Gas mask'],
+  
   add(itemName) {
     console.log(`Adding ${itemName} to inventory`);
     this.items.push(itemName);
