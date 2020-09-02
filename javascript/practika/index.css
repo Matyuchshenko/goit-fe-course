@@ -1,0 +1,114 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+    font-family: Arial, "Helvetica Neue", Helvetica, Tahoma, sans-serif;
+}
+.todo-list {
+    box-shadow: 0 0 10px 1px rgba(0,0,0,.2);
+    padding: 20px 30px;
+    width: 100%;
+    list-style: none;
+}
+.todo-list--empty > .todo-list__empty-text{
+    min-height: 2rem;
+    opacity: 1;
+    font-size: 1rem;
+}
+.todo-list__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: mediumpurple;
+    padding: 15px 20px;
+    color: white;
+    font-weight: bold;
+    border-radius: 4px;
+    transform: none;
+    transition: .6s cubic-bezier(1,-0.6, 0.96, 0.99);
+    opacity: 1;
+}
+.todo-list__item--removed {
+    transform: translateX(-100%);
+    opacity: 0;
+}
+.todo-list__item--completed {
+    background-color: orange;
+}
+.todo-list__item-actions {
+    display: flex;
+}
+.todo-list__item-action {
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 0;
+    outline: none;
+    transition: .3s ease;
+    cursor: pointer;
+}
+.todo-list__item-action:hover {
+    transform: scale(1.05);
+    opacity: .8;
+}
+.todo-list__item-action:not(:last-child) {
+    margin-right: 10px;
+}
+.todo-list__item-action--complete {
+    background-color: lightseagreen;
+}
+.todo-list__item-action--delete {
+    background-color: orangered;
+}
+.todo-list__item:not(:last-child) {
+    margin-bottom: 10px;
+}
+.todo-list__title {
+    font-size: 2rem;
+    font-weight: bold;
+}
+.todo-list__title--decorated {
+    box-shadow: 0 0 10px 1px rgba(0,0,0,.5);
+    font-style: italic;
+}
+.todo-list__empty-text {
+    font-size: 0rem;
+    text-align: center;
+    transition: .3s ease;
+    min-height: 0;
+    opacity: 0;
+}
+.add-todo {
+    display: flex;
+    width: 100%;
+    border-radius: 4px;
+    overflow: hidden;
+}
+.add-todo__input {
+    padding: 15px 20px;
+    flex-grow: 1;
+}
+.add-todo__button {
+    cursor: pointer;
+    text-transform: uppercase;
+    padding: 15px 20px;
+    background-color: tomato;
+    border: 0;
+    outline: none;
+    font-weight: bold;
+    transition: .3s ease;
+}
+.add-todo__button:hover {
+    background-color: red;
+}
