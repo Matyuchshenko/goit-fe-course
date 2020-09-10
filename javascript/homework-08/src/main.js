@@ -58,6 +58,10 @@ function onImageClick(event) {
   closeModalOverlay.addEventListener("click", (event) => {
     if (event.target === event.currentTarget) {
       nextActiveDiv.classList.remove("is-open");
+      nextActivePhoto.setAttribute("src", "");
+      nextActivePhoto.setAttribute("alt", "");
     }
+
+    
   });
 }
