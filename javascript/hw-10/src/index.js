@@ -6,39 +6,30 @@ const menuList = document.querySelector('.js-menu');
 const markup = sectionTemplate(foodList);
 menuList.insertAdjacentHTML('beforeend', markup);
 
-document.addEventListener('DOMContentLoaded', () => {
-  const Theme = {
-    LIGHT: 'light-theme',
-    DARK: 'dark-theme',
-  };
+const Theme = {
+  LIGHT: 'light-theme',
+  DARK: 'dark-theme',
+};
 
-  const body = document.querySelector('body');
-  const checkBox = document.querySelector('#theme-switch-toggle');
+const body = document.querySelector('body');
+const checkBox = document.querySelector('#theme-switch-toggle');
 
-  const changeLocalstorage = () => {
-    localStorage.setItem('themLocalstorage', body.classList);
-  };
-  const getLocalstorage = (localStorage.getItem('themLocalstorage'));
-  
-    function themeChangeLocalstorage() {
-    if (getLocalstorage === 'dark-theme') {
-      body.classList.add(Theme.DARK);
-    };
-  };
-  themeChangeLocalstorage();
+const themeChangeLocalstorage = () => {
+  if (localStorage.getItem('key') === 'dark-theme') {
+    body.classList.add(Theme.DARK);
+  }
+}
+themeChangeLocalstorage();
 
-  const themeChange = () => {
-    if (checkBox.checked || body.classList.contains(Theme.LIGHT)) {
-      body.classList.remove(Theme.LIGHT);
-      body.classList.add(Theme.DARK);
-      changeLocalstorage();
-    } else if (body.classList.contains(Theme.DARK)) {
-      body.classList.remove(Theme.DARK);
-      body.classList.add(Theme.LIGHT);
-      changeLocalstorage();
-    }
-  };
-  
-
-  checkBox.addEventListener('change', themeChange);
-});
+const themeChange = () => {
+  if (checkBox.checked || body.classList.contains(Theme.LIGHT)) {
+    body.classList.remove(Theme.LIGHT);
+    body.classList.add(Theme.DARK);
+    localStorage.setItem('key', body.classList);
+  } else if (body.classList.contains(Theme.DARK)) {
+    body.classList.remove(Theme.DARK);
+    body.classList.add(Theme.LIGHT);
+    localStorage.setItem('key', body.classList);
+  }
+};
+checkBox.addEventListener('change', themeChange);
