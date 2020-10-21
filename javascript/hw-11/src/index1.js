@@ -14,9 +14,6 @@ const randomIntegerFromInterval = (min, max) => {
 const startBtnRef = document.querySelector('[data-action="start"]');
 const stopBtnRef = document.querySelector('[data-action="stop"]');
 
-startBtnRef.addEventListener('click', onClickStart);
-stopBtnRef.addEventListener('click', onClickStop);
-
 const getRandomColor = () => {
   const color = colors[randomIntegerFromInterval(0, 5)];
   console.log(color);
@@ -25,14 +22,17 @@ const getRandomColor = () => {
 
 let intervalId = null;
 
-function onClickStart() {
+const onClickStart = () => {
   intervalId = setInterval(getRandomColor, 1000);
   startBtnRef.disabled = true;
 };
 
-function onClickStop() {
+const onClickStop = () => {
   if (intervalId) {
     clearInterval(intervalId);
     startBtnRef.disabled = false;
   }
 };
+
+startBtnRef.addEventListener('click', onClickStart);
+stopBtnRef.addEventListener('click', onClickStop);

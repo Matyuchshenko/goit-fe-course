@@ -5,11 +5,11 @@ const getTimeRemaining = (endTime) => {
   const minutes = pad(Math.floor((time % (1000 * 60 * 60)) / (1000 * 60)));
   const seconds = pad(Math.floor((time % (1000 * 60)) / 1000));
   return {
-    total: time,
-    days: days,
-    hours: hours,
-    minutes: minutes,
-    seconds: seconds,
+    time,
+    days,
+    hours,
+    minutes,
+    seconds,
   };
 };
 
@@ -31,11 +31,12 @@ const initializeClock = (id, endTime) => {
     minutesSpan.textContent = time.minutes;
     secondsSpan.textContent = time.seconds;
     if (time.total <= 0) {
-      clearInterval(setInterval(updateClock, 1000));
+      clearInterval(timeInterval);
     };
   };
   updateClock();
+  const timeInterval = setInterval(updateClock, 1000);
 };
 
-const deadLineFormat = new Date(Date.parse('October 20, 2020'));
+const deadLineFormat = new Date(Date.parse('October 30, 2020'));
 initializeClock('timer-1', deadLineFormat);
