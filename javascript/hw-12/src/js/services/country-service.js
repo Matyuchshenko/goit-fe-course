@@ -2,7 +2,6 @@ const baseUrl = 'https://restcountries.eu/rest/v2/name/';
 
 export default {
   fetchArticles(query) {
-    const requestParams = `${query}`;
-    return fetch(baseUrl + requestParams).then(resolve => resolve.json());
+    return fetch(baseUrl + `${query}`).then(resolve => resolve.json());
   },
 };
