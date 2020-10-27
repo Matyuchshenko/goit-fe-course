@@ -12,7 +12,6 @@ const countrySearchInputHandler = (event) => {
   clearArticlesContainer();
 
   const searchQuery = event.target.value;
-  console.log(searchQuery);
 
   countrySearch
     .fetchArticles(searchQuery)
@@ -49,7 +48,7 @@ const countrySearchInputHandler = (event) => {
 }
 refs.searchForm.addEventListener(
   'input',
-  debounce(countrySearchInputHandler, 1500),
+  debounce(countrySearchInputHandler, 500),
 );
 
 const buildListMarkup = (countries, template) => {
