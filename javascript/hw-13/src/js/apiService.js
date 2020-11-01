@@ -16,7 +16,7 @@ export default {
     this.incrementPage();
     return parseRes.hits;
   },
-  
+
   get searchQuery() {
     return this.query;
   },

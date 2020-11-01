@@ -7,18 +7,16 @@ import * as basicLightbox from 'basiclightbox';
 const imageSearchInputHandler = event => {
   event.preventDefault();
 
-  const input = event.currentTarget.elements.query.value;
+  service.searchQuery = event.currentTarget.elements.query.value;
 
-  clearListItems(); // очищаем список
-  service.resetPage(); //количество страниц
-  service.searchQuery = input;
+  service.resetPage();
 
   service.fetchArticles()
     .then(hits => {
+      clearListItems();
       const markup = buildListItemsTemplate(hits);
       serviceListItems(markup);
   });
-  input.value = '';
 };
 
 const buildListItemsTemplate = items => {
