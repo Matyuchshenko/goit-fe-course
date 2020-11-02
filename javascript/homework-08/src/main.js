@@ -61,7 +61,5 @@ function onImageClick(event) {
       nextActivePhoto.setAttribute("src", "");
       nextActivePhoto.setAttribute("alt", "");
     }
-
-    
   });
 }
