@@ -33,26 +33,25 @@ const paginationHidenRef = document.querySelector('.pagination');
 const activeHomePage = () => {
   exChange.innerHTML = '';
   paginationHidenRef.classList.remove('js-display__none');
-  libraryBtnRef.classList.add('js-display__none');
-  formaRef.classList.remove('js-display__none');
-  fetchPopularMoviesList();
-  //.addEventListener('click', кнопки пагинации);
-  //.addEventListener('click', кнопки пагинации);
+  libraryBtnRef.classList.add('js-display__none');// показует блок кнопок
+  formaRef.classList.remove('js-display__none');// показует форму поиска
+  fetchPopularMoviesList(); //отрисовует картинки
+
 };
 home.addEventListener('click', activeHomePage);
 hederName.addEventListener('click', activeHomePage);
 
 const activeLibraryPage = () => {
   exChange.innerHTML = '';
-  formaRef.classList.add('js-display__none');
-  libraryBtnRef.classList.remove('js-display__none');
-  paginationHidenRef.classList.add('js-display__none');
+  formaRef.classList.add('js-display__none');//убираем форму
+  libraryBtnRef.classList.remove('js-display__none'); //
+  paginationHidenRef.classList.add('js-display__none');// прячем пагинацию
   drawQueueFilmList();
   const buttonQueue = document.querySelector('.js-btnQueue');
   const buttonWatched = document.querySelector('.js-btnWatched');
-  buttonQueue.setAttribute('active', true);
-  buttonQueue.addEventListener('click', drawQueueFilmList);
-  buttonWatched.addEventListener('click', drawWatchedFilmList);
+  // buttonQueue.setAttribute('active', true);
+  buttonQueue.addEventListener('click', drawQueueFilmList);//
+  buttonWatched.addEventListener('click', drawWatchedFilmList);//вызывает
 };
 library.addEventListener('click', activeLibraryPage);
 
@@ -80,7 +79,7 @@ const createCardFilmFunc = (
   ];
   filmsListRef.insertAdjacentHTML('beforeend', filmCard(renderFilm));
 };
-
+// removeEventListener
 const activeDetailsPage = event => {
   if (event.target.nodeName !== 'LI') {
     return;
@@ -109,8 +108,8 @@ const activeDetailsPage = event => {
   };
   selectedFilm();
 
-  const detailsQueue = document.querySelector('.details__queue');
-  const detailsWatched = document.querySelector('.details__watched');
+  const detailsQueue = document.querySelector('.details__button-queue');
+  const detailsWatched = document.querySelector('.details__button-watched');
   detailsQueue.addEventListener('click', toggleToQueue(selectFilm));
   detailsWatched.addEventListener('click', toggleToWatched(selectFilm));
 };
