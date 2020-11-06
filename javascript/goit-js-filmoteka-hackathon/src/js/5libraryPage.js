@@ -1,63 +1,53 @@
 import itemsLibraryTemplate from '../templates/itemLibraryTemplate.hbs';
-import { activeDetailsPage } from './3navigation';
+import { apiKey } from './1initialHomePage';
 
 const libraryListRef = document.querySelector('.js-films-list');
 const queueBtnRef = document.querySelector('.js-btnQueue');
 const watchedBtnRef = document.querySelector('.js-btnWatched');
 
-const createLibraryCardFunc = (imgPath, filmTitle, movieId, voteAverage) => {
-  renderFilms = [
-    {
-      poster_path: data.imgPath,
-      title: data.filmTitle,
-      id: data.movieId,
-      evaluation: data.voteAverage,
-    },
-  ];
-  libraryListRef.innerHTML(itemsLibraryTemplate(renderFilms));
-  // libraryListRef.addEventListener('click', event =>
-  //   event.target(activeDetailsPage(movieId, true)),
-  // );
+const filmsFromLibrary = movieId => {
+  const createLibraryCardFunc = data => {
+    const acc = [data];
+    libraryListRef.insertAdjacentHTML('beforeend', itemsLibraryTemplate(acc));
+  };
+  const urlForLibraryFilm = `https://api.themoviedb.org/3/movie/${movieId}?api_key=${apiKey}`;
+  fetch(urlForLibraryFilm)
+    .then(res => res.json())
+    .then(data => {createLibraryCardFunc(data)})
+
+};
+const createLibraryCardFunc = data => {
+const arr = [data]
+  libraryListRef.insertAdjacentHTML("beforeend", itemsLibraryTemplate(arr));
+    .then(data => {
+      createLibraryCardFunc(data);
+    });
 };
 
 const drawQueueFilmList = () => {
-  let queueLibraryArr;
   queueBtnRef.classList.add('btn__active');
   watchedBtnRef.classList.remove('btn__active');
-  const localStorageData = localStorage.getItem("filmsQueue");
-  console.log(localStorageData);
-  if (localStorageData === null || localStorageData.length === null) {
+  const localStorageData = JSON.parse(localStorage.getItem('filmsQueue'));
+  if (localStorageData === null || localStorageData.length === 0) {
     libraryListRef.innerHTML =
       '<li class="content__warning__message">You do not have to queue movies to watch. Add them.</li>';
   } else {
-    queueLibraryArr = localStorageData.map(data =>
-      createLibraryCardFunc(imgPath, filmTitle, movieId, voteAverage),
-    );
     libraryListRef.innerHTML = '';
-    libraryListRef.append(...queueLibraryArr);
+    localStorageData.map(id => filmsFromLibrary(id));
   }
 };
 
 const drawWatchedFilmList = () => {
-  let watchedLibraryArr;
   watchedBtnRef.classList.add('btn__active');
   queueBtnRef.classList.remove('btn__active');
-  const localStorageData = localStorage.getItem('filmsWatched');
-  console.dir(localStorageData);
-  if (localStorageData === null || localStorageData.length === null) {
+  const localStorageData = JSON.parse(localStorage.getItem('filmsWatched'));
+  if (localStorageData === null || localStorageData.length === 0) {
     libraryListRef.innerHTML =
       '<li class="content__warning__message">You do not have watched movies. Add them.</li>';
   } else {
-    watchedLibraryArr = localStorageData.map(data =>
-      createLibraryCardFunc(imgPath, filmTitle, movieId, voteAverage),
-    );
     libraryListRef.innerHTML = '';
-    libraryListRef.append(...watchedLibraryArr);
+    localStorageData.map(id => filmsFromLibrary(id));
   }
 };
 
-// libraryListRef.addEventListener('click', event =>
-//   event.target(activeDetailsPage(movieId, true)),
-// );
-
-export { createLibraryCardFunc, drawQueueFilmList, drawWatchedFilmList };
+export { drawQueueFilmList, drawWatchedFilmList };
