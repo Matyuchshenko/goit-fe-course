@@ -1,7 +1,6 @@
 import service from './apiService.js';
 import cardImages from '../templates/templatesImages.hbs';
 import refs from './refs.js';
-// import search from './on-search.js';
 import * as basicLightbox from 'basiclightbox';
 
 const imageSearchInputHandler = event => {
@@ -36,7 +35,7 @@ const loadMoreBtnHandler = () => {
     serviceListItems(markup);
     window.scrollTo(0, 1000);
     window.scrollTo({
-      top: 1000,
+      top: document.body.scrollHeight,
       behavior: 'smooth',
     });
   });
