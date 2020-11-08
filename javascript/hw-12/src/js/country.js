@@ -25,24 +25,14 @@ const countrySearchInputHandler = (event) => {
         error({
           text: 'Too many matches found. Please enter a more specific query!',
           hide: true,
-          // animateSpeed: 'normal',
           delay: 1000,
-          // closer: true,
-          // remove: true,
-          // leading: false,
-          // trailing: true,
           width: '500px',
         });
       } else if (data.status === 404) {
         error({
           text: 'No country has been found!',
           hide: true,
-          // animateSpeed: 'normal',
           delay: 1000,
-          // closer: true,
-          // remove: true,
-          // leading: false,
-          // trailing: true,
           width: '500px',
         });
       } else if (data.length === 1) {
@@ -55,12 +45,7 @@ const countrySearchInputHandler = (event) => {
       error({
         text: 'You must enter query parameters!',
         hide: true,
-        // animateSpeed: 'normal',
         delay: 1000,
-        // closer: true,
-        // remove: true,
-        // leading: false,
-        // trailing: true,
         width: '500px',
       });
       console.log(err);
