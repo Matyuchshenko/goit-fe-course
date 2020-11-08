@@ -1,4 +1,4 @@
-const selectFilms = (function () {
+const goToTop = (function () {
   const trackScroll = () => {
     let scrolled = window.pageYOffset;
     let coords = document.documentElement.clientHeight;
